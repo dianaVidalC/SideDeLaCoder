@@ -1,45 +1,77 @@
 body{
-  position: relative;
+  height: 100%;
   text-align: center;
   font-family: helvetica,sans-serif;
-  background: lightblue;
+  background: #F8E9FA;
 }
 h1{
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 100px;
+  margin-top: 10px;
+  color: #44024D;
 }
-form{
-  margin-left: 300px;
-  margin-top: 50px;
+#sign-in{
+  margin: 0 auto;
   width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  background: lightgray;
+  min-height: 100%;
+  border: 1px solid lightgray;
+  background: white;
+  border-radius: 5px;
 }
-input{
-  border:1px solid gray;
+#coder{
+  border:1px solid lightgray;
   background: aliceblue;
   display:block;
   margin-top: 50px;
   margin-left: 35px;
-  margin-bottom: 45px;
   font-size: 17px;
   border-radius: 5px;
-
+  height: 25px;
 }
-button{
-  border:1px groove blue;
-  background: lightblue;
+#texto{
+  resize: none;
+  border:1px solid lightgray;
+  background: aliceblue;
+  margin-top: 10px;
+}
+#boton{
+  border:1px groove#440569;
+  background: #641E16;
   font-size: 20px;
   display: block;
   margin-left: 200px;
   margin-bottom: 10px;
   margin-top: 20px;
   border-radius:5px;
+  color: white;
+}
+.posteo{
+  margin: 0 auto;
+  width: 300px;
+  min-height: 100%;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+.contenido{
+  text-align: left;
+  margin-left: 10px;
+}
+.autor{
+  font-family: cursive;
+  text-align:right;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+#error-usuaria{
+  text-align: left;
+  color: red;
+  font-size: 11px;
+  margin-left: 30px;
 
 }
-textarea{
-  resize: none;
-  border:1px solid gray;
+#error-texto{
+  text-align: left;
+  color: red;
+  font-size: 11px;
+  margin-left: 30px;
 }
