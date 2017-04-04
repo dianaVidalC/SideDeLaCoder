@@ -23,23 +23,6 @@ window.addEventListener("load",function(){
            post.appendChild(autor);
            resultado.insertBefore(post,resultado.childNodes[0]);
            document.getElementById("sign-in").reset();
-      }else{
-        if (usuaria.value=="" && postear.value=="") {
-           errorUsuaria.appendChild(document.createTextNode("*Ingrese usuaria"));
-           errorTexto.appendChild(document.createTextNode("*Ingrese texto"));
-           coder.focus();
-           return false;
-        }else if (usuaria.value!="" && postear.value=="") {
-          errorTexto.appendChild(document.createTextNode("*Ingrese texto"));
-          errorUsuaria.innerHTML="";
-          coder.focus();
-          postear.focus;
-          return false;
-        }else if (usuaria.value=="" && postear.value!="") {
-          errorUsuaria.appendChild(document.createTextNode("*Ingrese usuaria"));
-          errorTexto.innerHTML="";
-          coder.focus();
-        }
       }
    });
 });
