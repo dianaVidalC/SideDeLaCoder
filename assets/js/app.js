@@ -1,19 +1,19 @@
 window.addEventListener("load",function(){
-  var boton=document.getElementById("boton");
-  var postear=document.getElementById("texto");
-  var coder=document.getElementById("coder");
-  var resultado=document.getElementById("post");
-  var usuaria=document.getElementById("coder");
-  var errorUsuaria=document.getElementById("error-usuaria");
-  var errorTexto=document.getElementById("error-texto");
+  var boton         = document.getElementById("boton");
+  var postear       = document.getElementById("texto");
+  var coder         = document.getElementById("coder");
+  var resultado     = document.getElementById("post");
+  var usuaria       = document.getElementById("coder");
+  var errorUsuaria  = document.getElementById("error-usuaria");
+  var errorTexto    = document.getElementById("error-texto");
 
   boton.addEventListener("click",function(e){
     e.preventDefault();
 
       if (usuaria.value!="" && postear.value!="") {
-        var post = document.createElement('div');
+        var post  = document.createElement('div');
         var texto = document.createElement('p');
-        var autor=document.createElement("p");
+        var autor = document.createElement('p');
            post.classList.add("posteo");
            autor.classList.add("autor");
            texto.classList.add("contenido");
@@ -30,15 +30,16 @@ window.addEventListener("load",function(){
            coder.focus();
            return false;
         }else if (usuaria.value!="" && postear.value=="") {
-          errorTexto.appendChild(document.createTextNode("*Ingrese texto"));
           errorUsuaria.innerHTML="";
+          errorTexto.appendChild(document.createTextNode("*Ingrese texto"));
           coder.focus();
           postear.focus;
           return false;
         }else if (usuaria.value=="" && postear.value!="") {
-          errorUsuaria.appendChild(document.createTextNode("*Ingrese usuaria"));
           errorTexto.innerHTML="";
+          errorUsuaria.appendChild(document.createTextNode("*Ingrese usuaria"));
           coder.focus();
+          return false;
         }
       }
    });
